@@ -16,8 +16,10 @@ class PizzeriaStyle {
   );
   static final TextStyle subHeaderTextStyle =
   baseTextStyle.copyWith(fontSize: 26.0);
+
   static final TextStyle itemPriceTextStyle = const TextStyle(
       color: Colors.blueGrey);
+
   static final TextStyle subPriceTextStyle = baseTextStyle.copyWith(
     color: Colors.indigo,
     fontSize: 20.0,
