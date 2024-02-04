@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pizzeria/models/cart.dart';
+import 'package:pizzeria/services/pizzeria_service.dart';
 import 'package:pizzeria/ui/share/pizzeria_style.dart';
 
 class Panier extends StatefulWidget {
@@ -29,8 +30,8 @@ class _PanierState extends State<Panier> {
                 return ListTile(
                   title: Row(
                     children: [
-                      Image.asset(
-                        'assets/images/pizzas/${cartItem.pizza.image}',
+                      Image.network(
+                        '${PizzeriaService.uri}/static/images/pizzas/${cartItem.pizza.image}',
                         height: 100,
                         width: 100,
                         fit: BoxFit.cover,

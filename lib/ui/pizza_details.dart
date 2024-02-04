@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pizzeria/services/pizzeria_service.dart';
 import 'package:pizzeria/ui/share/buy_button_widget.dart';
 import 'package:pizzeria/ui/share/pizzeria_style.dart';
 import 'package:pizzeria/ui/share/total_widget.dart';
@@ -31,8 +32,8 @@ class _PizzaDetailsState extends State<PizzaDetails> {
             'Pizza ${widget._pizza.title}',
             style: PizzeriaStyle.pageTitleTextStyle,
           ),
-          Image.asset(
-            'assets/images/pizzas/${widget._pizza.image}',
+          Image.network(
+            '${PizzeriaService.uri}/static/images/pizzas/${widget._pizza.image}',
             height: 180,
           ),
           Text(

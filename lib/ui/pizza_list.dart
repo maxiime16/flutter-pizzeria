@@ -94,7 +94,7 @@ class _PizzaListState extends State<PizzaList> {
           leading: Icon(Icons.local_pizza),
         ),
         Image.network(
-          '${PizzeriaService.uri}/images/pizzas/${pizza.image}',
+          '${PizzeriaService.uri}/static/images/pizzas/${pizza.image}',
           height: 120,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.fitWidth,
