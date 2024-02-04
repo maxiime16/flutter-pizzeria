@@ -37,4 +37,11 @@ class Pizza{
 
     return total;
   }
+
+  Pizza.fromJson(Map<String, dynamic> json)
+      : id = json['id'],
+        title = json['title'],
+        garniture = json['garniture'],
+        image = json['image'],
+        price = json['price'];
 }
